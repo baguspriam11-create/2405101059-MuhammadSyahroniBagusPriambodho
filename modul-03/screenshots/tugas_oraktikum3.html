@@ -1,0 +1,208 @@
+
+<!-- a & b. Perbaikan dan perapian source code praktikum -->
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Belajar Membuat Form</title>
+    <style>
+    body { font-family: Arial, sans-serif; max-width: 480px; margin: 2rem auto; padding: 0 1rem; line-height: 1.6; }
+    .baris { margin-bottom: 1rem; }
+    .baris > label:first-child, .baris > p { display: block; font-weight: bold; margin: 0 0 .25rem; }
+    input[type="text"], input[type="password"], select, textarea { width: 100%; padding: .4rem; box-sizing: border-box; }
+    </style>
+</head>
+<body>
+    <h1>Belajar Membuat Form</h1>
+    <form action="formulir.html" method="get">
+
+    <div class="baris">
+        <label for="nama">Nama:</label>
+        <input type="text" id="nama" name="nama" placeholder="Nama Kamu">
+    </div>
+
+    <div class="baris">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password">
+    </div>
+
+    <div class="baris">
+        <p>Jenis Kelamin:</p>
+        <label><input type="radio" name="jenis_kelamin" value="laki-laki" checked> Laki - Laki</label><br>
+        <label><input type="radio" name="jenis_kelamin" value="perempuan"> Perempuan</label>
+    </div>
+
+    <div class="baris">
+        <p>Hobi:</p>
+        <label><input type="checkbox" name="hobi_baca"> Membaca Buku</label>
+        <label><input type="checkbox" name="hobi_nulis" checked> Menulis</label>
+        <label><input type="checkbox" name="hobi_mancing"> Memancing</label>
+    </div>
+
+    <div class="baris">
+        <label for="asal_kota">Asal Kota:</label>
+        <select id="asal_kota" name="asal_kota">
+        <option value="Kota Jakarta">Jakarta</option>
+        <option value="Kota Bandung">Bandung</option>
+        <option value="Kota Semarang" selected>Semarang</option>
+        </select>
+    </div>
+
+    <div class="baris">
+        <label for="komentar">Komentar Anda:</label>
+        <textarea id="komentar" name="komentar" rows="5" cols="20">Silahkan katakan isi hati anda</textarea>
+    </div>
+
+    <input type="submit" value="Mulai Proses!">
+    </form>
+</body>
+</html>
+
+
+
+
+
+
+<!-- c. Formulir_Perpuskotamadiun.html -->
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Formulir Anggota Perpustakaan Kota Madiun</title>
+    <style>
+    body { font-family: Georgia, serif; background: #f3efe6; color: #2b2b2b; margin: 0; padding: 1rem; }
+    form { max-width: 520px; margin: 1.5rem auto; background: #fff; padding: 1.5rem; border: 2px solid #5a3e2b; }
+    h1 { font-size: 1.4rem; text-align: center; color: #5a3e2b; margin-top: 0; }
+    .baris { margin-bottom: 1rem; }
+    .baris > label:first-child, .baris > p { display: block; font-weight: bold; margin: 0 0 .25rem; }
+    input[type="text"], input[type="password"], input[type="date"], select, textarea { width: 100%; padding: .45rem; box-sizing: border-box; font: inherit; }
+    input[type="submit"] { background: #5a3e2b; color: #fff; border: 0; padding: .6rem 1.2rem; font: inherit; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <form action="proses_anggota.php" method="post">
+    <h1>Pendaftaran Anggota<br>Perpustakaan Kota Madiun</h1>
+
+    <div class="baris">
+        <label for="nama">Nama Lengkap:</label>
+        <input type="text" id="nama" name="nama">
+    </div>
+
+    <div class="baris">
+        <label for="nik">No. Identitas (NIK/NIS):</label>
+        <input type="text" id="nik" name="nik">
+    </div>
+
+    <div class="baris">
+        <p>Jenis Kelamin:</p>
+        <label><input type="radio" name="jenis_kelamin" value="laki-laki" checked> Laki-laki</label>
+        <label><input type="radio" name="jenis_kelamin" value="perempuan"> Perempuan</label>
+    </div>
+
+    <div class="baris">
+        <label for="pekerjaan">Pekerjaan:</label>
+        <select id="pekerjaan" name="pekerjaan">
+        <option value="pelajar">Pelajar</option>
+        <option value="mahasiswa">Mahasiswa</option>
+        <option value="pegawai">Pegawai</option>
+        <option value="lainnya">Lainnya</option>
+        </select>
+    </div>
+
+    <div class="baris">
+        <label for="alamat">Alamat:</label>
+        <textarea id="alamat" name="alamat" rows="4"></textarea>
+    </div>
+
+    <div class="baris">
+        <p>Kategori Buku yang Diminati:</p>
+        <label><input type="checkbox" name="minat_fiksi"> Fiksi</label>
+        <label><input type="checkbox" name="minat_pelajaran"> Pelajaran</label>
+        <label><input type="checkbox" name="minat_sains"> Sains</label>
+        <label><input type="checkbox" name="minat_sejarah"> Sejarah</label>
+    </div>
+
+    <div class="baris">
+        <label for="password">Password Akun:</label>
+        <input type="password" id="password" name="password">
+    </div>
+
+    <input type="submit" value="Daftar Anggota">
+    </form>
+</body>
+</html>
+
+
+
+
+
+
+<!-- d. Formulir_kliniksehat.html -->
+
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Formulir Pendaftaran Pasien Klinik Sehat</title>
+    <style>
+    body { font-family: Arial, sans-serif; background: #eaf5f2; color: #1d2b2a; margin: 0; padding: 1rem; }
+    form { max-width: 520px; margin: 1.5rem auto; background: #fff; padding: 1.5rem; border-top: 6px solid #1f8a70; }
+    h1 { font-size: 1.4rem; color: #1f8a70; margin-top: 0; }
+    .baris { margin-bottom: 1rem; }
+    .baris > label:first-child, .baris > p { display: block; font-weight: bold; margin: 0 0 .25rem; }
+    input[type="text"], input[type="date"], select, textarea { width: 100%; padding: .45rem; box-sizing: border-box; font: inherit; }
+    input[type="submit"] { background: #1f8a70; color: #fff; border: 0; padding: .6rem 1.2rem; font: inherit; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <form action="proses_pasien.php" method="post">
+    <h1>Pendaftaran Pasien Klinik Sehat</h1>
+
+    <div class="baris">
+        <label for="nama">Nama Pasien:</label>
+        <input type="text" id="nama" name="nama">
+    </div>
+
+    <div class="baris">
+        <label for="tgl_lahir">Tanggal Lahir:</label>
+        <input type="date" id="tgl_lahir" name="tgl_lahir">
+    </div>
+
+    <div class="baris">
+        <label><input type="radio" name="jenis_kelamin" value="laki-laki" checked> Laki-laki</label>
+        <label><input type="radio" name="jenis_kelamin" value="perempuan"> Perempuan</label>
+    </div>
+
+    <div class="baris">
+        <label for="poli">Poli Tujuan:</label>
+        <select id="poli" name="poli">
+        <option value="umum">Poli Umum</option>
+        <option value="gigi">Poli Gigi</option>
+        <option value="anak">Poli Anak</option>
+        <option value="kandungan">Poli Kandungan</option>
+        </select>
+    </div>
+
+    <div class="baris">
+        <p>Riwayat Penyakit:</p>
+        <label><input type="checkbox" name="riwayat_alergi"> Alergi</label>
+        <label><input type="checkbox" name="riwayat_asma"> Asma</label>
+        <label><input type="checkbox" name="riwayat_diabetes"> Diabetes</label>
+        <label><input type="checkbox" name="riwayat_hipertensi"> Hipertensi</label>
+    </div>
+
+    <div class="baris">
+        <label for="keluhan">Keluhan:</label>
+        <textarea id="keluhan" name="keluhan" rows="5"></textarea>
+    </div>
+
+    <input type="submit" value="Daftar Berobat">
+    </form>
+</body>
+</html>
